@@ -1,4 +1,4 @@
-// defining once here for future reuse
+// defining type here for future reuse
 type account = { money: number, deposit: (value: number) => void}
 
 let bankAccount: account = {
