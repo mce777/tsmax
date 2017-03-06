@@ -1,3 +1,4 @@
+// TYPE ALIAS
 // defining type here for future reuse
 type account = { money: number, deposit: (value: number) => void}
 
