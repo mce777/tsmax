@@ -29,6 +29,7 @@ const {firstName, experience} = scientist;
 console.log(firstName, experience);
 
 ///////////// Original ///////////
+
 // Exercise 1 - Maybe use an Arrow Function?
 var double = function(value) {
 	return value * 2;
