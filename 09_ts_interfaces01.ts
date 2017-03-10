@@ -1,9 +1,9 @@
 // kind of like an elaborate custom type
-// Max called it a 'contract'
+// Max calls it a 'contract'
 interface IName {
 	firstName: string;
 	age?: number;  // the ? makes it optional
-	[propName: string]: any;
+	[propName: string]: any; // there will be additional params, but unkown what kind
 	greet2(lastName: string): void;
 }
 
@@ -29,7 +29,7 @@ changeName(person);
 greet(person);
 person.greet2("Anything");
 
-// can also do it with a class
+// can also do it with a class. Note 'implements'
 class Person implements IName {
 	firstName: string;
 	lastName: string;
@@ -44,7 +44,7 @@ mePerson.lastName = "Anything";
 greet(mePerson);
 mePerson.greet2(mePerson.lastName);
 
-// function types
+// interface for function types
 
 interface DoubleValueFunc {
 	(number1: number, number2: number): number;
@@ -59,6 +59,7 @@ console.log(myDoubleFunction(10,20));
 
 // interface inheritance
 
+// note 'extends'
 interface AgedPerson extends IName {
 	age: number;
 }

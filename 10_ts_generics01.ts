@@ -1,4 +1,4 @@
-// simple, not so great generic
+// simple, not good generic
 function echo(data: any) {
 	return data;
 }
@@ -9,10 +9,10 @@ console.log(echo({name: "Max", age: 27}));
 
 // a better generic
 // the data we get will be of type T
+// telling TypeScript to give us the type when using function
 function betterEcho<T>(data: T) {
 	return data;
 }
-
 console.log(betterEcho("Max")); // here, we get 'length' suggested
 console.log(betterEcho(27)); // here, 'length' will show up red AND results in compile error
 console.log(betterEcho({name: "Max", age: 27}));
@@ -20,7 +20,7 @@ console.log(betterEcho({name: "Max", age: 27}));
 // Built-in Generics
 const testResults: Array<number> = [1.94, 2.33];
 testResults.push(-2.99);
-// testResults.push("random string"); // see, won't work
+// testResults.push("random string"); // won't work
 
 // Arrays
 function printAll<T>(args: T[]) {
@@ -45,12 +45,3 @@ const simpleMath = new SimpleMath();
 simpleMath.baseValue = "10";
 simpleMath.multiplyValue = "20";
 console.log(simpleMath.calculate());
-
-
-
-
-
-
-
-
-
