@@ -1,3 +1,4 @@
+// decorators are just functions
 // decorators are a ts feature (an experimental one)
 // this example here is printing the constructor fn of the class
 function logged(constructorFn: Function) {
