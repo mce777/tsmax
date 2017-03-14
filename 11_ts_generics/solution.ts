@@ -1,5 +1,6 @@
 class MyMap<T> {
-    // the [] in [key: string] do NOT refer to an array
+    // the [] in [key: string] does NOT refer to an array
+    // 'map' is an object with a string 'key' and generic 'value', initially empty
     private map: {[key: string]: T} = {};
 
     setItem(key: string, item: T) {
