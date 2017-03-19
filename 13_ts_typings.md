@@ -4,12 +4,10 @@ for example...
 
 `npm install --save-dev @types/jquery`
 
-we're still using 'definitely typed' Github repo. This is just a simpler way to do it. 
-It gets added to `package.json` and the `node_module/@types` folder. 
+You are still using 'definitely typed' Github repo. This is just a simpler way to do it.
+It gets added to `package.json` and the `node_module/@types` folder.
 
-Another example: for **React**, run this (sets up react and react-dom):
+**React** example
+Run this (sets up react and react-dom):
 
 `npm install --save-dev @types/react @types/react-dom`
-
-
-
