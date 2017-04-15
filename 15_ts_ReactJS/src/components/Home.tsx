@@ -5,6 +5,7 @@ interface HomeProps {
     age: number;
 }
 
+// Component is generic, expecting two values: type of props, state
 export class Home extends React.Component<HomeProps, {}> {
     render() {
         return (
